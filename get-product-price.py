@@ -25,17 +25,17 @@ for i in range (len(link_list)):
         price = price_values.contents
 
         if price != None:
-            #price_list.append(price)
             url_list.append(link_list[i])
             price = " ".join(price)
             products_df['price'][i] = price
-
             print(price)
+
         else:
             products_df['price'][i] = "None"
             
         
     except:
         print(link_list[i])
-
+    
+    products_df.to_csv('new_products_features.csv')
     time.sleep(180)
