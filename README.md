@@ -1,4 +1,3 @@
-```markdown
 # Sephora Scraping
 
 A project for scraping product information from Sephora's website using Python and Jupyter Notebook.
